@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/tech' element={<TechCrunch />}/>
-        <Route path='/tesla' element={<Tesla />}/>
+        {/* <Route path='/tesla' element={<Tesla />}/> */}
         <Route path='/allnews' element={<Apple />}/>
         <Route path='/business' element={<Business />}/>
         {/* <Route path='/allnews' element={<AllNews />}/> */}
