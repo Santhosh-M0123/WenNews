@@ -1,0 +1,127 @@
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(52, 52, 52);
+  
+  /* -webkit-box-shadow: 6px 14px 22px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 14px 22px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 14px 22px -1px rgba(0, 0, 0, 0.75); */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  color: white;
+  /* margin-top: 20px; */
+}
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links {
+  padding-left: 30px;
+  /* color: black; */
+  color: white;
+  text-decoration: none;
+  font-family: "Lugrasimo", cursive;
+  transition: 0.5s;
+}
+
+.nav_title {
+  cursor: pointer;
+  font-family: "Lugrasimo", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav_title h3{
+    font-size: 25px;
+}
+.nav_title p{
+    font-size: 10px;
+}
+
+.menu_icon {
+  display: none;
+}
+.close_icon {
+  display: none;
+}
+.active{
+    color : gray;
+    transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .menu_icon {
+    display: block;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+  }
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .nav_title {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .navlinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: rgba( 141, 140, 140, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navlinks .links_list {
+    z-index: 1000;
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .links {
+    margin-bottom: 50px;
+    color: black;
+    font-weight: bolder;
+  }
+  .close_icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  #close {
+    position: absolute;
+    left: -100vh;
+    transition: 0.5s;
+  }
+  #open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+}
